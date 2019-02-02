@@ -1,0 +1,83 @@
+<view>
+  <view class="user">
+    <image class="user-avatar" bindtap="getUserInfo" wx:if='{{greyAvatar}}' src="/pages/images/avatar.png"></image>
+    <image class="user-avatar" wx:if='{{userInfo}}' src='{{userInfo.avatarUrl}}'></image>
+    <view class='information'>
+      <text class="user-nickname">ID:{{userInfo.nickName}}</text>
+      <view class='sex'>
+        <text class='gender'>性别：{{gender}}</text>
+        <view class='sign' wx:if='{{userInfo}}'>
+          <text catchtap='signTap'>{{signWords}}</text>
+        </view>
+      </view>
+      <view>
+        <text>等级：</text>
+        <image class='starlogo' wx-if='{{loginIn}}' src='/pages/images/star.png'></image>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{greyLogin}}'>
+    <view class='btn-area' bindtap="getUserInfo">
+      <text>登录</text>
+    </view>
+  </view>
+  <view wx:if='{{userInfo}}' class='coins'>
+    <view class='coinId'>
+      <text>酷币</text>
+      <text class='coinNum'>{{coin}}</text>
+    </view>
+    <view class='coinId'>
+      <text>积分</text>
+      <text class='coinNum'>{{score}}</text>
+    </view>
+    <view class='coinId'>
+      <text>余额</text>
+      <text class='coinNum'>{{money}}</text>
+    </view>
+  </view>
+  <view class='contains'>
+    <view class='message'>
+      <image src='/pages/images/gift.png'></image>
+      <text class='text'>活动中心</text>
+      <image class='more' src='/pages/images/more.png'></image>
+    </view>
+    <view class='message'>
+      <image src='/pages/images/message.png'></image>
+      <text class='text'>消息通知</text>
+      <switch checked bindchange="switch1Change" />
+      <!-- <image class='more' src='/pages/images/more.png'></image> -->
+    </view>
+    <view class='message' id='second'>
+      <image src='/pages/images/mail.png'></image>
+      <text class='text'>联系我们</text>
+      <image class='more' src='/pages/images/more.png'></image>
+    </view>
+  </view>
+  <view class='contains'>
+    <view class='message' catchtap="getCarList">
+      <image src='/pages/images/car.png'></image>
+      <text class='text'>我的订单</text>
+      <image class='more' src='/pages/images/more.png'></image>
+    </view>
+    <view class='message'>
+      <image src='/pages/images/share.png'></image>
+      <button open-type="share" catchtap='clickTap' class='text'>点击分享</button>
+      <image class='more' src='/pages/images/more.png'></image>
+    </view>
+    <view class='message' id='second'>
+      <image src='/pages/images/save.png'></image>
+      <text class='text'>月卡活动</text>
+      <image class='more' src='/pages/images/more.png'></image>
+    </view>
+    <view class='message'>
+      <image src='/pages/images/help.png'></image>
+      <text class='text'>帮助</text>
+      <image class='more' src='/pages/images/more.png'></image>
+    </view>
+  </view>
+  <view class='footer'>
+    <text catchtap="phoneCall">联系电话:<text class='phoneNum' >18279124451 </text></text>
+    <text catchtap='getScan'>微信:yuhang3661175{{res}}</text>
+  </view>
+
+</view>

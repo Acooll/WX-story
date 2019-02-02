@@ -1,0 +1,38 @@
+.story{
+  width:100%;
+  position: relative;
+}
+.bookcontent{
+  width:100%;
+  background: #d2dec9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  
+  }
+.title{
+  font-weight: bold;
+  font-size: 18px;
+}
+.words{
+  margin: 0 20rpx 0 20rpx;
+}
+/* .footer{
+  width:100%;
+  height: 80rpx;
+  background: #fa4;
+  position: absolute;
+  mar
+  } */
+  .chapter{
+    display:flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    background: gainsboro;
+    margin: 35rpx 25rpx 30rpx 25rpx;
+    border-radius: 10rpx;
+
+  }

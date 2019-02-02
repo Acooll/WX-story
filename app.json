@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/firstbook/firstbook",
+    "pages/my/my",
+    "pages/pop/pop",
+    "pages/out/out",
+    "pages/carlist/carlist",
+    "pages/search/search",
+    "pages/search/detail/detail",
+    "pages/more/more",
+    "pages/read/read"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"grey",
+    "navigationBarBackgroundColor": "grey",
+    "navigationBarTitleText": "酷阅读",
+    "navigationBarTextStyle":"black"
+  
+  },
+  "tabBar": {
+    "list": [
+      { 
+        "pagePath": "pages/firstbook/firstbook",
+        "text": "首页",
+         "iconPath": "pages/images/book.png",
+         "selectedIconPath": "pages/images/book2.png"
+      },
+      {
+        "pagePath": "pages/pop/pop",
+        "text": "热门",
+        "iconPath": "pages/images/pop.png",
+        "selectedIconPath": "pages/images/pop2.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "pages/images/search.png",
+        "selectedIconPath": "pages/images/search2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/images/my.png",
+        "selectedIconPath": "pages/images/my2.png"
+      }
+    ],
+    "text": "30px",
+    "selectedColor": "#1296db"
+  }
+  
+}

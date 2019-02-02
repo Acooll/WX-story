@@ -1,0 +1,10 @@
+<template name='singlebook'>
+  <view class='single'>
+    <image class='singleimg' src='{{item.bookDefaultImg}}'></image>
+    <view class='singlebook'>
+      <text class='singletitle'>{{item.title}}</text>
+      <text>作者：{{item.author}}</text>
+      <text class='singlewords'>{{item.description}}</text>
+  </view>
+  </view>
+</template>

@@ -1,0 +1,23 @@
+
+.book{
+  display:flex;
+  flex-direction: column;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+.book image{
+  width:220rpx;
+  height:350rpx;
+  margin-top:30rpx;
+}
+.title{
+  margin-left: 10rpx;
+  width:200rpx;
+}
+.title text{
+ display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

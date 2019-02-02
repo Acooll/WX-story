@@ -1,0 +1,45 @@
+<view>
+  <view class='search'>
+    <image src='/pages/images/icon_search.png'></image>
+    <input bindblur='onSearch'  value='{{originWords}}' bindfocus='onFocus'></input>
+  </view>
+  <view wx:if='{{showPop}}'>
+    <text class='popSearch'>热门搜索</text>
+    <view class='pop'>
+      <block wx:for='{{popwords}}' wx:for-item='item' wx:for-index='index'>
+        <view catchtap='showPop' class='popWords' id='{{index}}'>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <!-- <view class='popWords'>
+          <text>通天仕途</text>
+        </view>
+      <!-- <view class='popWords'>
+        <text>官途</text>
+      </view>
+      <view class='popWords'>
+        <text>老婆大人有点冷</text>
+      </view>
+      <view class='popWords'>
+        <text>绝世唐门</text>
+      </view>
+      <view class='popWords'>
+        <text>重生之一品帝王妃</text>
+      </view>
+      <view class='popWords'>
+        <text>西行记</text>
+      </view> -->
+  <!-- </view> -->
+</view>
+<view>
+<view class='find' wx:if='{{searches}}'>以下是"{{searchWords}}"的相关作品信息：</view>
+<block wx:if='{{searches}}' wx:for='{{searches}}' wx:for-item='item' wx:for-index='idx'>
+  <view class='findBooks' bindtap='showDetail' id='{{idx}}'>
+    <text>《{{item.title}}》</text>
+    <text class='price'>￥{{item.price}}</text>
+  </view>
+</block>
+</view>

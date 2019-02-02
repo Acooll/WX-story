@@ -1,0 +1,43 @@
+@import '/pages/booklist/booklist-template';
+.shoprec{
+  width:100%;
+  height:100rpx;
+  background: dodgerblue;
+  text-align: center;
+  color: white;
+  line-height: 100rpx;
+}
+.nulllist{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100rpx;
+}
+.nulllist image{
+  width:200rpx;
+  height:200rpx;
+  margin-bottom: 50rpx;
+}
+.single{
+  width: 400rpx;
+  height: 400rpx
+  margin-top： 50rpx;
+  padding-bottom: 50rpx;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 30rpx;
+  position: relative;
+}
+.bookImg{
+  width: 300rpx;
+  height: 360rpx
+}
+.cancel{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-top: -350rpx;
+  margin-left: 400rpx
+ 
+}

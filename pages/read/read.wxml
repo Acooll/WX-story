@@ -1,0 +1,13 @@
+<view class='story'>
+<view class='bookcontent'>
+  <text class='title'>第一章</text>
+
+  <text class='words'>{{novel}}</text>
+  <view class='chapter'>
+    <text>上一章</text>
+    <text>目录</text>
+    <text>下一章</text>
+  </view>
+</view>
+<view class='footer'></view>
+</view>

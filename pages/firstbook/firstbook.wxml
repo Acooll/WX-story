@@ -1,0 +1,43 @@
+<import src='/pages/booklist/booklist-template' />
+<import src='/pages/singlebook/singlebook-template' />
+<import src='/pages/bookgood/bookgood-template' />
+<view>
+  <swiper class='swiper' interval='5000' autoplay indicator-dots indicator-active-color='red' indicator-color='white'>
+    <swiper-item wx:for='{{bannerNovels}}' wx:for-item='item'  wx:key ='key'>
+      <image src='{{item.img}}' catchtap='showMore' id='{{item._id}}'> </image>
+      <!-- <image src='https://cms-bucket.nosdn.127.net/2018/08/14/e87b45eb59bb49b1be16837ee16d648c.jpeg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://cms-bucket.nosdn.127.net/2018/08/17/813b981474494e90bc10bb052a4fffd5.jpeg'></image> -->
+    </swiper-item>
+  </swiper>
+  <view>
+    <view  class='booktype'>
+      <image class='icon' src='../images/icon.png'> </image>
+      <text class='guessword'>猜你喜欢</text>
+    </view>
+    <view class='booklists'>
+      <block wx:for='{{guessbooks}}' wx:for-item='item'>
+        <template is='booklist' data='{{item}}' />
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class='booktype'>
+      <image class='icon' src='../images/icon.png'> </image>
+      <text class='guessword'>热销爽文</text>
+    </view>
+    <block wx:for='{{firstbooks}}' wx:for-item='item'>
+      <template is='singlebook' data='{{item}}' />
+    </block>
+  </view>
+  <view>
+    <view class='booktype'>
+      <image class='icon' src='../images/icon.png'> </image>
+      <text class='guessword'>热销佳作</text>
+    </view>
+   <block wx:for='{{goodbooks}}' wx:for-item='item'> 
+    <template is='bookgood'  data='{{item}}' />
+    </block>
+  </view>
+</view>

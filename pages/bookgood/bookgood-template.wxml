@@ -1,0 +1,10 @@
+<template name='bookgood'>
+  <view class='single'>
+    <image class='singleimg' src='{{item.iconUrl}}'></image>
+    <view class='bookgood'>
+      <text class='singletitle'>{{item.title}}</text>
+      <text>作者：{{item.author}}</text>
+      <text class='singlewords'>类目：{{item.categoryName}}</text>
+  </view>
+  </view>
+</template>

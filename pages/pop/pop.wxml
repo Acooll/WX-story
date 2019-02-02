@@ -1,0 +1,84 @@
+<import src='/pages/booklist/booklist-template' />
+<import src='/pages/singlebook/singlebook-template' />
+<import src='/pages/bookgood/bookgood-template' />
+<view wx:if='{{sex}}'>
+  <view>
+    <view>
+      <view class='booktype'>
+        <image class='icon' src='../images/icon.png'> </image>
+        <text class='guessword'>女频热销榜</text>
+        <view class='togglesex' catchtap='changeSex'>
+          <text>男频</text>
+        </view>
+      </view>
+      <view class='booklist'>
+        <block wx:for='{{girlbooks}}' wx:for-item='item'>
+          <template is='booklist' data='{{item}}' />
+        </block>
+      </view>
+    </view>
+    <view>
+      <block wx:for='{{popbooks}}' wx:for-item='item'>
+        <template is='singlebook' data='{{item}}' />
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class='booktype'>
+      <image class='icon' src='../images/icon.png'> </image>
+      <text class='guessword'>女频人气榜</text>
+    </view>
+    <view class='popwords'>
+      <text>查看榜单详情</text>
+    </view>
+    <view>
+      <block wx:for='{{topbooks}}' wx:for-item='item'>
+        <template is='bookgood' data='{{item}}' />
+      </block>
+    </view>
+    <view class='popwords'>
+      <text>查看榜单详情</text>
+    </view>
+  </view>
+</view>
+<view wx:if='{{boy}}'>
+  <view>
+    <view>
+      <view class='booktype'>
+        <image class='icon' src='../images/icon.png'> </image>
+        <text class='guessword'>男频热销榜</text>
+        <view class='togglesex' catchtap='changeBoy'>
+          <text>女频</text>
+        </view>
+      </view>
+      <view class='booklist'>
+        <block wx:for='{{boybooks}}' wx:for-item='item'>
+          <template is='booklist' data='{{item}}' />
+        </block>
+      </view>
+    </view>
+    <view>
+
+      <block wx:for='{{greatbooks}}' wx:for-item='item'>
+        <template is='bookgood' data='{{item}}' />
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class='booktype'>
+      <image class='icon' src='../images/icon.png'> </image>
+      <text class='guessword'>男频人气榜</text>
+    </view>
+    <view class='popwords'>
+      <text>查看榜单详情</text>
+    </view>
+
+    <block wx:for='{{highbooks}}' wx:for-item='item'>
+      <template is='bookgood' data='{{item}}' />
+    </block>
+
+    <view class='popwords'>
+      <text>查看榜单详情</text>
+    </view>
+  </view>
+</view>

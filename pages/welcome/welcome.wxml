@@ -1,0 +1,10 @@
+<view class='welcome'>
+  <image class='bgImg' src='../images/welcome.jpg'></image>
+  <!-- <view>
+  <image class='logo' src='../images/logo.jpg' ></image>
+  </view> -->
+  <view class='open' catchtap='openBook'>
+    <text>开启阅读之旅</text>
+    <image class='fingerImg' src='../images/finger.png'></image>
+  </view>
+</view>

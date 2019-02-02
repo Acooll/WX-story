@@ -1,0 +1,44 @@
+.single{
+  width:100%;
+  display: flex;
+  border-bottom: 1px solid #FAF0E6;
+  padding-bottom: 10rpx;
+  
+}
+.singleimg{
+  width:260rpx;
+  height:300rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.bookgood{
+  width:80%;
+  font-size: 12px;
+  color:#555;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #FAF0E6;
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+  padding-left: 30rpx;
+  margin-right: 30rpx;
+
+}
+.singlebook text{
+  margin-top:20rpx;
+  margin-left: 20rpx;
+}
+.singletitle{
+  color:black;
+  font-size: 13px;
+}
+.singlewords{
+  width:100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-top: -20rpx;
+}

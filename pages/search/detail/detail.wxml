@@ -1,0 +1,26 @@
+<view>
+  <block wx:for='{{bookDetail}}' wx:for-item="item">
+    <view class='parts'>
+      <text>{{item.title}}</text>
+    </view>
+  </block>
+  <view class='moreparts'>
+    <text>查看全部章节</text>
+  </view>
+  <view class='judge'>
+    <text>评论:</text>
+  </view>
+  <view class='avatar'>
+  <image class='coloravatar' src='/pages/images/none.png'></image>
+  </view>
+  <block wx:for='{{talks}}' wx:for-item="item">
+        <image class='noneavatar' wx:if='{{item.avatar}}' src="{{item.avatar}}"></image>
+      <view>
+      <view>
+        <text>{{item.text}}</text>
+        <text></text>
+        <text></text>
+      </view>
+    </view>
+  </block>
+</view>

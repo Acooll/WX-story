@@ -1,0 +1,57 @@
+.welcome{
+  width:100%;
+  height:1206rpx;
+  position: relative;
+}
+.bgImg{
+  width:100%;
+  height:1206rpx;
+  position: absolute;
+}
+/* .welcome{
+  width:100%;
+  height:1206rpx;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background: goldenrod;
+  } */
+/* .logo{
+  width:100px;
+  height:100px;
+  border: 1px blanchedalmond solid;
+  border-radius: 50px;
+  margin-top: 100rpx ;
+  position: absolute;
+} */
+.open{
+  width:60rpx;
+  height:310rpx;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 500rpx;
+  margin-left: 50rpx;
+  position: absolute;
+  line-height: 50rpx;
+  padding-top: 14rpx;
+  background: goldenrod;
+  font-weight: bold;
+  color:aliceblue;
+
+}
+.fingerImg{
+  width:70rpx;
+  height:70rpx;
+  position: absolute;
+  margin-left: -55rpx;
+  margin-top: 70rpx;
+  -webkit-animation: fadenum 2s infinite;
+  -moz-animation: fadenum 2s infinite;
+  animation: fadenum 2s infinite;
+}
+@-webkit-keyframes fadenum{
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacit: 1;}
+}

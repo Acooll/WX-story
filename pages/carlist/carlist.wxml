@@ -1,0 +1,23 @@
+<import src='/pages/booklist/booklist-template' />
+<view>
+  <view class='shoprec'>
+    <text>购买记录</text>
+  </view>
+  <view wx:if='{{nonebook}}' class='nulllist'>
+    <image src='/pages/images/nulllist.png'></image>
+    <text>暂无您的购买记录</text>
+  </view>
+  <view wx:else='{{nonebook}}' class='single'>
+    <view class='booklists'>
+      <block wx:for='{{carBooks}}' wx:for-item='item' wx:key='key'>
+        <image src='{{item.img}}' class='bookImg'></image>
+          <view catchtap='delete' id='{{item._id}}'>
+            <image src='/pages/images/icon_cancel.png' class='cancel'></image>
+          </view>
+          <view>
+            <text>{{item.name}}</text>
+          </view>
+        </block>
+    </view>
+  </view>
+</view>

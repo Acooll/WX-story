@@ -1,0 +1,63 @@
+.search{
+  width:94%;
+  height:50rpx;
+  margin-left:3%;
+  display: flex;
+  justify-content: flex-start;
+  background: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  border-radius: 50rpx;
+  color:gray;
+  font-size: 14px;
+  align-items: center;
+  margin-top:50rpx;
+}
+.search image{
+  width:40rpx;
+  height:40rpx;
+  margin-left:5rpx;
+  margin-right: 20rpx;
+}
+.popSearch{
+  margin-left:20rpx;
+  margin-top: 30rpx;
+  font-size: 15px;
+}
+.popWords{
+  height:40rpx;
+  color: white;
+  margin-right: 15rpx;
+  font-size: 13px;
+  background: #6fa8dc;
+  border:1px #6fa8dc solid;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 40rpx;
+  margin-top: 30rpx;
+  padding: 0 10rpx;
+}
+.pop{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50rpx;
+}
+.find{
+  margin-left: 15rpx;
+  font-size: 14px;
+  margin-bottom: 30rpx;
+}
+.findBooks{
+  margin-left:20rpx;
+  color:#6fa8dc;
+  font-size: 15px;
+  margin-bottom: 30rpx;
+  border-bottom: 1rpx solid #dcdcdc;
+  display: flex;
+  flex-wrap: wrap;
+}
+.price{
+  margin-left:30rpx;
+  color:#f40;
+  font-size: 13px;
+}

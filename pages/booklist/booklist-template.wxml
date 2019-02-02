@@ -1,0 +1,11 @@
+
+ <view class='booklists'>
+  <template name='booklist'>
+    <view class='book' catchtap='showMore' >
+      <image src='{{item.iconUrl}}'></image>
+      <view class='title'>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+    </template>
+  </view>

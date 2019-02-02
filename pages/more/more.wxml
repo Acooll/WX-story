@@ -1,0 +1,83 @@
+<view class='morebook' wx:for='{{novelDetail}}' wx:for-item='item'>
+  <view class='nightwalker' wx:if='{{novelDetail}}'>
+    <image src='{{item.img}}'></image>
+    <view class='bookinfo'>
+      <text>{{item.name}}</text>
+      <text class='authorinfo'>{{item.author}} 著</text>
+      <view class='typeinfo'>
+        <view>
+          <text>{{item.novelType}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='startbook'>
+    <text catchtap='goRead' class='start'>免费试读</text>
+    <text catchtap='onShop' class='add'>{{bookOn}}</text>
+  </view>
+  <view class='textwords'>
+    <text>   {{item.tags}}</text>
+  </view>
+  <!-- <view class='nightwalkers' wx:else>
+    
+    <image src='http://cdn.motieimg.com/book/0010/102209/2.jpg?x-oss-process=image/resize,m_lfit,h_560,w_400'></image>
+    <view class='bookinfos'>
+      <view>
+        <text>夜行者：平妖二十年</text>
+        <text>南无袈裟理科佛 著</text>
+        <view>
+          <view>
+            <text>探险</text>
+          </view>
+          <view>
+            <text>灵异奇谈</text>
+          </view>
+          <view>
+            <text>悬疑</text>
+          </view>
+        </view>
+      </view>
+    </view> -->
+    <!-- <view class='startbooks'>
+      <text catchtap='goRead' class='starts'>免费试读</text>
+      <text catchtap='onShop' class='adds'>{{bookOn}}</text>
+    </view>
+    <view class='textwordss'>
+      <text>   “人之假造为妖，物之性灵为精，人魂不散为鬼。天地乖气，忽有非常为怪，神灵不正为邪，人心癫迷为魔，偏向异端为外道。”</text>
+    </view>
+  </view> -->
+
+</view>
+
+
+
+<view class='hotwords'>
+  <view class='hottalk'>
+    <text>热门评论</text>
+  </view>
+  <block wx:for='{{booktalks}}' wx:for-item='item'>
+    <view class='talks'>
+      <image class='avatar' src='{{item.avatar}}'></image>
+      <view class='info'>
+        <view class='ping'>
+          <text class='username'>{{item.username}}</text>
+          <view class='stars'>
+            <image wx:if='{{item.stars-0}}' src='/pages/images/star.png' class='star'></image>
+            <image wx:else src='/pages/images/none-star.png' class='star'></image>
+            <image wx:if='{{item.stars-1}}' src='/pages/images/star.png' class='star'></image>
+            <image wx:else src='/pages/images/none-star.png' class='star'></image>
+            <image wx:if='{{item.stars-2}}' src='/pages/images/star.png' class='star'></image>
+            <image wx:else src='/pages/images/none-star.png' class='star'></image>
+            <image wx:if='{{item.stars-3}}' src='/pages/images/star.png' class='star'></image>
+            <image wx:else src='/pages/images/none-star.png' class='star'></image>
+            <image wx:if='{{item.stars-4}}' src='/pages/images/star.png' class='star'></image>
+            <image wx:else src='/pages/images/none-star.png' class='star'></image>
+          </view>
+
+        </view>
+        <text class='contentwords'>{{item.text}}</text>
+        <text class='posttime'>{{item.posttime}}发表</text>
+      </view>
+    </view>
+  </block>
+</view>

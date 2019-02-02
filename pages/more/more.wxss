@@ -1,0 +1,137 @@
+.morebook{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.morebook image{
+  width:250rpx;
+  height:330rpx
+}
+.startbook{
+  width:80%;
+  display: flex;
+  justify-content: space-around;
+  margin-left:40rpx;
+  font-size: 14px;
+}
+.start{
+  background: #f6a;
+  color:aliceblue;
+  border: 1px solid #f6a;
+  margin-top: 30rpx;
+  padding: 10rpx 55rpx 10rpx 55rpx;
+}
+.add{
+    padding: 10rpx 55rpx 10rpx 55rpx;
+    margin-top: 30rpx;
+    border: 1px #FAF0E6 solid;
+    
+}
+.textwords{
+  width:90%;
+  margin-top:20rpx;
+  border-bottom: 2px solid #FAF0E6;
+  font-size: 13px;
+  padding-bottom: 10rpx;
+
+}
+.hottalk{
+  margin-left: 30rpx;
+  font-size: 14px;
+  border-bottom: 2px #faf0e6 solid;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-right:20px; 
+}
+.talks{
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 20rpx;
+ 
+}
+.avatar{
+  width:80rpx;
+  height:80rpx;
+  border:1px solid #faf0e6;
+  border-radius: 50rpx;
+  
+}
+.contentwords{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 20rpx;
+
+}
+.username{
+  color:skyblue;
+  font-weight: bold;
+  margin-top:30rpx;
+}
+.posttime{
+  font-size: 12px;
+  color: #798594;
+  margin-top: 20rpx;
+}
+.stars{
+  display: flex;
+  margin-left: 20rpx;
+}
+.star{
+  width:20rpx;
+  height: 20rpx;
+  margin-top:38rpx;
+  margin-left: 5rpx;
+}
+.ping{
+  display: flex;
+}
+.nightwalker{
+  display: flex;
+}
+.bookinfo{
+  display: flex;
+  font-size: 16px;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 40rpx;
+  font-weight: bold
+}
+.authorinfo{
+  margin-left: 60rpx;
+  font-size: 13px;
+  color: #798594;
+  margin-top: -100rpx;
+  font-weight: normal;
+}
+.typeinfo{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50rpx;
+  padding: 0 20rpx 0 0rpx;
+
+}
+.typeinfo view{
+  border:1px solid #ff4c2f;
+  border-radius: 5rpx;
+  color:#ff4c2f;
+  font-size: 14px;
+  padding-right: 20rpx;
+  margin-right: 10rpx;
+  text-align: center;
+}
+.typeinfo text{
+  margin-left: 18rpx;
+}
