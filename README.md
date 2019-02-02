@@ -13,11 +13,11 @@
 
 # project shots
 
-![images](https://github.com/Acooll/WX-story/raw/master/BookRead/pages/images/wx01.jpg)
-![images](https://github.com/Acooll/WX-story/raw/master/BookRead/pages/images/wx02.jpg)
-![images](https://github.com/Acooll/WX-story/raw/master/BookRead/pages/images/wx03.jpg)
-![images](https://github.com/Acooll/WX-story/raw/master/BookRead/pages/images/wx04.jpg)
-![images](https://github.com/Acooll/WX-story/raw/master/BookRead/pages/images/wx05.jpg)
-![images](https://github.com/Acooll/WX-story/raw/master/BookRead/pages/images/wx06.jpg)
-![images](https://github.com/Acooll/WX-story/raw/master/BookRead/pages/images/wx07.jpg)
-![images](https://github.com/Acooll/WX-story/raw/master/BookRead/pages/images/wx08.jpg)
+![images](https://github.com/Acooll/WX-story/raw/master/pages/images/wx01.jpg)
+![images](https://github.com/Acooll/WX-story/raw/master/pages/images/wx02.jpg)
+![images](https://github.com/Acooll/WX-story/raw/master/pages/images/wx03.jpg)
+![images](https://github.com/Acooll/WX-story/raw/master/pages/images/wx04.jpg)
+![images](https://github.com/Acooll/WX-story/raw/master/pages/images/wx05.jpg)
+![images](https://github.com/Acooll/WX-story/raw/master/pages/images/wx06.jpg)
+![images](https://github.com/Acooll/WX-story/raw/master/pages/images/wx07.jpg)
+![images](https://github.com/Acooll/WX-story/raw/master/pages/images/wx08.jpg)
